@@ -24,10 +24,19 @@
           padding:16px 18px; margin:20px 0; font-size:14.5px; }
   footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--line);
            color:var(--muted); font-size:13px; }
+
+  .backhome { display:inline-flex; align-items:center; gap:6px; text-decoration:none;
+              color:var(--muted); font-size:13.5px; margin-bottom:22px; transition:color .2s; }
+  .backhome:hover { color:var(--accent); }
+  .backhome span { font-size:15px; line-height:1; }
+  .footlinks { margin-top:14px; display:flex; flex-wrap:wrap; gap:8px 18px; }
+  .footlinks a { color:var(--accent); text-decoration:none; font-size:13px; }
+  .footlinks a:hover { text-decoration:underline; }
 </style>
 </head>
 <body>
 <div class="wrap">
+  <a class="backhome" href="./"><span>&larr;</span> MattAi Salon home</a>
   <header>
     <h1>Terms of Service</h1>
     <p class="sub">MattAi Salon &middot; Last updated: 12 July 2026</p>
@@ -78,6 +87,12 @@
 
   <footer>
     &copy; 2026 MattAi Salon.
+
+    <div class="footlinks">
+      <a href="./">Home</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="data-deletion.html">Data Deletion</a>
+    </div>
   </footer>
 </div>
 </body>
